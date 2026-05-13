@@ -1,148 +1,57 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>7-Tage Roadtrip – South Dakota</title>
-<link rel="stylesheet" href="../css/style.css">
-<style>
-.route-map-img { width:100%; height:420px; object-fit:cover; object-position:center; display:block; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>7-Tage Roadtrip – South Dakota</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div id="cur"></div><div id="cur-o"></div>
-<nav id="nav">
-  <a class="nav-brand" href="../index.html">South Dakota</a>
-  <div class="nav-links">
-    <a href="../index.html">Start</a>
-    <a href="natur.html">Natur</a>
-    <a href="geschichte.html">Geschichte</a>
-    <a href="route.html">Roadtrip</a>
-    <a href="essen.html">Essen</a>
-    <a href="praktisch.html">Praktisches</a>
-  </div>
-</nav>
 
-<div class="page-hero">
-  <div class="page-hero-img" style="background-image:url('https://images.unsplash.com/photo-1501949997128-2fdb9f6428f1?w=1800&q=85')"></div>
-  <div class="page-hero-veil"></div>
-  <div class="page-hero-body">
-    <p class="page-hero-tag">Roadtrip Planer</p>
-    <h1>Der perfekte<br><em>7-Tage-Trip</em></h1>
-  </div>
-</div>
+  <nav id="nav">
+    <a href="../index.html" class="nav-logo">South Dakota</a>
+    <div class="nav-links">
+      <a href="../index.html">Start</a>
+      <a href="natur.html">Natur</a>
+      <a href="geschichte.html">Geschichte</a>
+      <a href="route.html">Roadtrip</a>
+      <a href="essen.html">Essen</a>
+      <a href="praktisch.html">Praktisches</a>
+    </div>
+  </nav>
 
-<!-- INTRO NOTE -->
-<div class="split rv">
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=85" alt="Panorama" loading="lazy">
-  </div>
-  <div class="split-body">
-    <p class="split-tag">Warum ein Auto Pflicht ist</p>
-    <h2>South Dakota<br>ohne Auto ist unmöglich</h2>
-    <p>Es gibt keine Züge und kaum Busse zwischen den Sehenswürdigkeiten. Ein Mietwagen ist Pflicht. Die gute Nachricht: Unbegrenzte Kilometer sind meist inklusive, es gibt keine Mautstraßen, und auf der Interstate 90 darfst du 80 mph (130 km/h) fahren.</p>
-    <p>Von Sioux Falls im Osten bis Mount Rushmore im Westen sind es 370 Meilen (600 km). Die meisten Touristen fliegen in Rapid City (RAP) ein – ideal als Ausgangspunkt für die Black Hills.</p>
-  </div>
-</div>
-
-<!-- PHOTO STRIP: Roads -->
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-bottom:4px">
-  <div style="position:relative;overflow:hidden;aspect-ratio:3/4">
-    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=85" alt="Wald" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s" loading="lazy">
-  </div>
-  <div style="position:relative;overflow:hidden;aspect-ratio:3/4">
-    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85" alt="Badlands" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s" loading="lazy">
-  </div>
-  <div style="position:relative;overflow:hidden;aspect-ratio:3/4">
-    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=600&q=85" alt="Bison" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s" loading="lazy">
-  </div>
-  <div style="position:relative;overflow:hidden;aspect-ratio:3/4">
-    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=85" alt="Nadeln" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s" loading="lazy">
-  </div>
-</div>
-
-<!-- ROUTE PLANNER -->
-<div class="sh">
-  <p class="sh-tag rv">Interaktiv</p>
-  <h2 class="sh-title rv">Wähle deinen<br><em>Tag</em></h2>
-  <p class="sh-body rv">Klick auf einen Tag und sieh, was dich erwartet.</p>
-</div>
-
-<div style="padding:0 48px 100px">
-  <div class="rdays">
-    <div class="rday on" onclick="showDay(0)"><div class="rday-n">1</div><div class="rday-l">Tag</div><div class="rday-ic">▲</div></div>
-    <div class="rday" onclick="showDay(1)"><div class="rday-n">2</div><div class="rday-l">Tag</div><div class="rday-ic">▲</div></div>
-    <div class="rday" onclick="showDay(2)"><div class="rday-n">3</div><div class="rday-l">Tag</div><div class="rday-ic">▲</div></div>
-    <div class="rday" onclick="showDay(3)"><div class="rday-n">4</div><div class="rday-l">Tag</div><div class="rday-ic">▲</div></div>
-    <div class="rday" onclick="showDay(4)"><div class="rday-n">5</div><div class="rday-l">Tag</div><div class="rday-ic">▲</div></div>
-    <div class="rday" onclick="showDay(5)"><div class="rday-n">6</div><div class="rday-l">Tag</div><div class="rday-ic">▲</div></div>
-    <div class="rday" onclick="showDay(6)"><div class="rday-n">7</div><div class="rday-l">Tag</div><div class="rday-ic">▲</div></div>
+  <div class="page-hero">
+    <div class="page-hero-img" style="background-image:url('https://images.unsplash.com/photo-1501949997128-2fdb9f6428f1?w=1800&q=85')"></div>
+    <div class="page-hero-body">
+      <p class="page-hero-tag">Roadtrip Planer</p>
+      <h1>Der perfekte<br><em>7-Tage-Trip</em></h1>
+    </div>
   </div>
 
-  <div id="rdetail" class="rdetail on"></div>
-
-  <!-- Image pairs per day -->
-  <div id="dayImages" style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:4px"></div>
-</div>
-
-<!-- TIPS STRIP -->
-<div style="background:var(--ink);padding:72px 56px">
-  <div class="sh" style="padding-top:0">
-    <p class="sh-tag rv" style="color:var(--gold-lt)">Vor dem Start</p>
-    <h2 class="sh-title rv" style="color:#fff">Wichtige Hinweise<br><em>für die Fahrt</em></h2>
+  <div class="split">
+    <div class="split-img">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=85" alt="Panorama" loading="lazy">
+    </div>
+    <div class="split-body">
+      <p class="page-hero-tag" style="color: var(--prairie);">Warum ein Auto Pflicht ist</p>
+      <h2>South Dakota<br>ohne Auto ist unmöglich</h2>
+      <p>Es gibt keine Züge und kaum Busse zwischen den Sehenswürdigkeiten. Ein Mietwagen ist Pflicht. Die gute Nachricht: Unbegrenzte Kilometer sind meist inklusive, es gibt keine Mautstraßen, und auf der Interstate 90 darfst du 80 mph (130 km/h) fahren.</p>
+      <p>Die meisten Touristen fliegen in Rapid City (RAP) ein – ideal als Ausgangspunkt für die Black Hills.</p>
+    </div>
   </div>
-  <div class="tips-g rv">
-    <div class="tip"><div class="tip-n">01</div><h3>Mietwagen: unbegrenzte km</h3><p>Achte beim Buchen auf „unlimited miles". Die Strecke Rapid City – Sioux Falls ist 600 km. Ohne unbegrenzte Meilen wird das teuer.</p></div>
-    <div class="tip"><div class="tip-n">02</div><h3>Tunnelmaße beachten</h3><p>Iron Mountain Road und Needles Highway haben sehr enge Tunnel. Wohnmobile und breite Anhänger passen nicht durch. Engste Stelle: 2,4 Meter.</p></div>
-    <div class="tip"><div class="tip-n">03</div><h3>Minuteman Bunker: Monate vorher buchen</h3><p>Die Ranger-Tour in den Delta-01-Bunker ist extrem beliebt und schnell ausverkauft. Mindestens 3 Monate im Voraus buchen. Tickets: 12 Dollar.</p></div>
-    <div class="tip"><div class="tip-n">04</div><h3>Bisons: 100 Yards Abstand</h3><p>Bisons klingen langsam, sind es aber nicht. Mindestabstand: 100 Yards (90 Meter). Nie aussteigen, wenn ein Tier nah ist. Ernst gemeint.</p></div>
-    <div class="tip"><div class="tip-n">05</div><h3>Sturgis im August meiden</h3><p>Während der Sturgis Motorcycle Rally (7.–16. August) sind Hotels ausgebucht oder dreifach so teuer. Wenn du diese Zeit nicht willst: Reise vorher oder danach.</p></div>
-    <div class="tip"><div class="tip-n">06</div><h3>Tankstellen sind rar</h3><p>Zwischen manchen Orten gibt es 80+ Meilen keine Tankstelle. Immer mit vollem Tank losfahren. Auf der Sagecreek Rim Road kein Signal – Offline-Karte laden.</p></div>
-  </div>
-</div>
 
-<!-- BOTTOM PHOTO ROW -->
-<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:4px">
-  <div style="position:relative;height:380px;overflow:hidden">
-    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=85" alt="Aussicht" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s" loading="lazy">
-    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent)"></div>
-    <div style="position:absolute;bottom:28px;left:32px"><h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:#fff;font-weight:300">Weite Prärie –<br>die Seele des Staates</h3></div>
-  </div>
-  <div style="position:relative;height:380px;overflow:hidden">
-    <img src="https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=900&q=85" alt="Sternenhimmel" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s" loading="lazy">
-    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent)"></div>
-    <div style="position:absolute;bottom:28px;left:32px"><h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:#fff;font-weight:300">Sternenhimmel –<br>kaum Lichtverschmutzung</h3></div>
-  </div>
-</div>
+  <footer>
+    <div>
+      <div class="footer-brand">South Dakota</div>
+      <p class="footer-desc">Ein Reiseguide durch den Mount Rushmore Staat.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Seiten</h4>
+      <a href="../index.html">Startseite</a>
+      <a href="geschichte.html">Geschichte</a>
+      <a href="route.html">Roadtrip</a>
+    </div>
+  </footer>
 
-<footer>
-  <div><div class="footer-brand">South Dakota</div><p class="footer-desc">Ein Reiseguide durch den Mount Rushmore Staat.</p></div>
-  <div class="footer-col"><h4>Seiten</h4><a href="../index.html">Startseite</a><a href="natur.html">Natur & Parks</a><a href="geschichte.html">Geschichte</a><a href="route.html">Roadtrip</a><a href="essen.html">Essen</a><a href="praktisch.html">Praktisches</a></div>
-  <div class="footer-col"><h4>Roadtrip</h4><a href="route.html">7-Tage-Route</a><a href="praktisch.html">Beste Reisezeit</a><a href="praktisch.html#tipps">Sicherheitstipps</a><a href="praktisch.html#klima">Klima & Wetter</a></div>
-  <div class="footer-col"><h4>Highlights</h4><a href="natur.html">Badlands Park</a><a href="natur.html#custer">Custer State Park</a><a href="geschichte.html">Mount Rushmore</a><a href="essen.html">Lokales Essen</a></div>
-  <div class="footer-bottom"><span>Reiseguide South Dakota</span><span>Alle Informationen ohne Gewähr · Bilder: Unsplash</span></div>
-</footer>
-
-<script src="../js/shared.js"></script>
-<script>
-const days = [
-  { title:"Tag 1 – Ankunft & Badlands", text:"Flug nach Rapid City, Mietwagen holen und direkt auf die I-90 Richtung Osten. Erste Station: Wall Drug Store – kostenloser Kaffee für 5 Cent. Danach ab in den Badlands National Park. Am Nachmittag den Notch Trail wandern – Holzleiter, Felsklippen, atemberaubender Ausblick. Übernachtung in Wall.", stops:["Rapid City Airport (RAP)","Wall Drug Store","Badlands Loop Road (Hwy 240)","Notch Trail Wanderung","Übernachtung Wall"], imgs:["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80","https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=700&q=80","https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=700&q=80"] },
-  { title:"Tag 2 – Kalter Krieg & Black Hills", text:"Früh zur Minuteman Missile Site. Durch das Glas in den Raketensilo schauen, und falls Monate vorher gebucht: in den Bunker Delta-01 hinabsteigen. Danach Fahrt zurück westwärts in die Black Hills. Quartier in Hill City oder Keystone beziehen.", stops:["Minuteman Visitor Center (Exit 131)","Delta-09 Silo","Delta-01 Bunker (nur mit Vorab-Reservierung)","Fahrt in die Black Hills","Keystone oder Hill City"], imgs:["https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=80","https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80","https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=80"] },
-  { title:"Tag 3 – Präsidenten & Bisons", text:"Morgens Mount Rushmore – vier Präsidenten, Schuttberg davor, und Eis nach Thomas Jeffersons Originalrezept. Danach auf der Iron Mountain Road fahren: 314 Kurven, Pigtail-Brücken aus Holz, drei Felstunnel die Rushmore perfekt einrahmen. Am Abend auf der Wildlife Loop Road Bisons beobachten.", stops:["Mount Rushmore National Memorial","Carver's Café (Jefferson-Eis)","Iron Mountain Road (Hwy 16A)","Pigtail-Brücken & Felstunnel","Wildlife Loop Road bei Dämmerung"], imgs:["https://images.unsplash.com/photo-1564693766-8d78c2e8be9c?w=700&q=80","https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=700&q=80","https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&q=80"] },
-  { title:"Tag 4 – Nadeln, See & Höhlen", text:"Auf dem Needles Highway den bedrohlich engen Needles Eye Tunnel durchfahren – nur 2,4 Meter breit. Dann Picknick am idyllischen Sylvan Lake (Filmkulisse für National Treasure 2). Am Nachmittag: Wind Cave oder Jewel Cave, die drittlängste Höhle der Welt.", stops:["Needles Highway (Hwy 87)","Needles Eye Tunnel","Sylvan Lake Picknick","Wind Cave National Park","Jewel Cave National Monument"], imgs:["https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=80","https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=700&q=80","https://images.unsplash.com/photo-1547592180-85f173990554?w=700&q=80"] },
-  { title:"Tag 5 – Mammuts & Crazy Horse", text:"Fahrt nach Hot Springs. Die Mammoth Site: Paläontologen beim Freilegen von Mammutskeletten zusehen – live, keine Nachbildungen. Auf dem Rückweg Crazy Horse Memorial besuchen: der Berg wird noch gesprengt. Das angeschlossene Museum erklärt die Lakota-Kultur ausführlich.", stops:["The Mammoth Site Hot Springs","Crazy Horse Memorial","Indian Museum of North America","Laughing Water Restaurant","Highway 385 Scenic Drive"], imgs:["https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=80","https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80","https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=80"] },
-  { title:"Tag 6 – Wilder Westen & Canyons", text:"Nördlich nach Deadwood – täglich werden Schießereien nachgespielt. Wild Bill Hickok und Calamity Jane liegen auf dem Mount Moriah Cemetery begraben. Am Nachmittag Spearfish Canyon: 300 m hohe Kalksteinwände, Wasserfälle und (im Herbst) leuchtende Espen.", stops:["Deadwood Main Street","Mount Moriah Cemetery","Adams Museum","Spearfish Canyon Scenic Byway","Roughlock Falls & Spearfish Falls"], imgs:["https://images.unsplash.com/photo-1501949997128-2fdb9f6428f1?w=700&q=80","https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=700&q=80","https://images.unsplash.com/photo-1547592180-85f173990554?w=700&q=80"] },
-  { title:"Tag 7 – Abschied & Abreise", text:"Letzter Morgen: Souvenirs in Hill City oder Keystone kaufen. Vielleicht noch ein Chislic-Frühstück in einem lokalen Diner. Dann Fahrt zum Rapid City Airport. Optional: kleiner Abstecher über die Grenze nach Wyoming zum Devils Tower – ein gigantischer Felsmonolith, bekannt aus Unheimliche Begegnung der dritten Art.", stops:["Hill City Souvenir-Shops","Optionaler Abstecher: Devils Tower Wyoming","Rapid City Regional Airport (RAP)","Sichere Heimreise"], imgs:["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80","https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&q=80","https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=700&q=80"] },
-];
-
-function showDay(i) {
-  document.querySelectorAll('.rday').forEach((d,j)=>d.classList.toggle('on',i===j));
-  const d = days[i];
-  document.getElementById('rdetail').className='rdetail on';
-  document.getElementById('rdetail').innerHTML=`<h3>${d.title}</h3><p>${d.text}</p><div class="rdetail-stops">${d.stops.map(s=>`<span>— ${s}</span>`).join('')}</div>`;
-  document.getElementById('dayImages').innerHTML=d.imgs.map(u=>`<div style="position:relative;overflow:hidden;aspect-ratio:4/3"><img src="${u}" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></div>`).join('');
-}
-showDay(0);
-</script>
 </body>
 </html>
